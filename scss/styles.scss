@@ -1,0 +1,15 @@
+// Set up
+@import 'reset.scss';
+:root {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+
+  h1, h2, h3, h4 {
+    font-family: Inconsolata;
+  }
+}
+@import 'variables.scss';
+
+// Main files
+@import 'header.scss';
+
