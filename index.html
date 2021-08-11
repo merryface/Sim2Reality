@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fe91e7cc39.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="Header">
     <a href="/">
-      <img src="/assets/Orange.png" class="Header_logo" alt="Sim2Reality Logo"/>
+      <img src="/assets/logo/header_logo.png" class="Header_logo" alt="Sim2Reality Logo"/>
     </a>
 
     <nav class="Header_nav">
@@ -23,7 +24,72 @@
       <div class="Header_nav-item">Courses</div>
     </nav>
     </header>
-  <section>HERO</section>
-  <main>MAIN</main>
+  <section class="Hero">
+    <div class="Hero_bg"></div>
+    <img src="./assets/c172_behind.png" class="Hero_cessna" aria-hidden="true" alt="Cessna 172 from behind"></img>
+    <div class="Hero_clouds" aria-hidden="true">
+      <img src="/assets/cloud1.png" class="Hero_clouds-cloud" style="--i:1;">
+      <img src="/assets/cloud2.png" class="Hero_clouds-cloud" style="--i:2;">
+      <img src="/assets/cloud3.png" class="Hero_clouds-cloud" style="--i:3;">
+      <img src="/assets/cloud4.png" class="Hero_clouds-cloud" style="--i:4;">
+      <img src="/assets/cloud5.png" class="Hero_clouds-cloud" style="--i:5;">
+      <img src="/assets/cloud1.png" class="Hero_clouds-cloud" style="--i:10;">
+      <img src="/assets/cloud2.png" class="Hero_clouds-cloud" style="--i:9;">
+      <img src="/assets/cloud3.png" class="Hero_clouds-cloud" style="--i:8;">
+      <img src="/assets/cloud4.png" class="Hero_clouds-cloud" style="--i:7;">
+      <img src="/assets/cloud5.png" class="Hero_clouds-cloud" style="--i:6;">
+    </div>
+    <img src="/assets/logo/main_logo.png" class="Hero_logo" alt="Sim2Reality main logo transparent" />
+  </section>
+  <main>
+    <div class="Introduction">
+      <h1 class="Introduction_header">Welcome to Sim2Reality</h1>
+      <p class="Introduction_subtitle">Learn from a <span>real</span> Flight Instructor</p>
+      <p class="Introduction_body">
+        Youtube is full of tutorials teaching you what buttons to press and when. With Sim2Reality however, not only will you learn how to fly an airplane, but you will also be trained to think and react like a pilot. Our courses follow the full real world syllabus for pilot training. And it's all available to you! 
+      </p>
+    </div>
+
+    <div class="Widgets">
+      <div class="Widgets_inner">
+        <p class="Widgets_inner-title">What is Sim2Reality?</p>
+
+        <div class="Widgets_inner_items">
+          <div class="Widgets_inner_items-item" style="--i:'\f109';">
+            <p class="Widgets_inner_items-itemText">On-demand Courses</p>
+          </div>
+          
+          <div class="Widgets_inner_items-item" style="--i:'\f87c';">
+            <p class="Widgets_inner_items-itemText">Videos and Docs</p>
+          </div>
+          
+          <div class="Widgets_inner_items-item" style="--i:'\f51c';">
+            <p class="Widgets_inner_items-itemText">Taught by professionals</p>
+          </div>
+
+          <div class="Widgets_inner_items-item" style="--i:'\f6fc';">
+            <p class="Widgets_inner_items-itemText">Scenario-based Training</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Courses">
+      <h2 class="Courses_title">Courses</h2>
+      <div class="Courses_inner">
+        <div class="Courses_card">
+          <img class="Courses_card-image" src="/assets/thumbnail/ppl-thumbnail.jpg" />
+          <h3 class="Courses_card-title">Simulator PPL</h3>
+          <a class="Courses_card-link" href="/">Coming Soon</a>
+        </div>
+
+        <div class="Courses_card">
+          <img class="Courses_card-image" src="/assets/thumbnail/nightRating-thumbnail.jpg" />
+          <h3 class="Courses_card-title">Night Rating</h3>
+          <a class="Courses_card-link" href="/">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

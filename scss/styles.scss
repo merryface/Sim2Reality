@@ -3,13 +3,27 @@
 :root {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 
   h1, h2, h3, h4 {
     font-family: Inconsolata;
   }
 }
+
+main {
+  margin-bottom: 10rem;
+  line-height: 1.5;
+}
+
 @import 'variables.scss';
+
+// Mixins
+@import 'mixins.scss';
 
 // Main files
 @import 'header.scss';
+@import 'hero.scss';
+@import 'introduction.scss';
+@import 'widgets.scss';
+@import 'Courses.scss';
 

@@ -1,0 +1,24 @@
+.Introduction {
+  @include center;
+
+  &_header {
+    font-size: $title-size;
+    font-weight: bold;
+    color: $primary-colour;
+  }
+
+  &_subtitle {
+    font-style: italic;
+    margin: 0.5rem 0;
+    font-size: $subtitle-size;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &_body {
+    margin: 1rem 0;
+    font-size: $body-size;
+  }
+}
