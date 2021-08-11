@@ -89,6 +89,9 @@ main {
 }
 
 .Hero {
+  perspective: 2px;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -107,6 +110,7 @@ main {
   animation: 3s ease-out 0s 1 left;
   animation-fill-mode: forwards;
   z-index: 2;
+  scroll-behavior: smooth;
 }
 @keyframes left {
   0% {
