@@ -295,13 +295,15 @@ main {
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.2s ease-in-out;
-  pointer-events: none;
 }
 .Courses_inner .Courses_card-link:hover {
   cursor: pointer;
   background-color: rgba(239, 121, 11, 0.5);
   padding: 1.5rem 2.5rem;
   color: #fff;
+}
+.Courses_inner .Courses_card-link-disabled {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
