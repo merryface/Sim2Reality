@@ -23,7 +23,7 @@
     @include slideIn(left, 3);
     animation-fill-mode: forwards;
     z-index: 2;
-    scroll-behavior: smooth;
+    
   }
 
   &_clouds {
