@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -297,7 +298,15 @@ main {
   font-size: 5rem;
   font-weight: bold;
   color: #45268d;
+  padding-bottom: 2rem;
   margin-bottom: 3rem;
+}
+.Courses_title:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5rem;
+  background: #45268d;
 }
 .Courses_inner {
   display: flex;
@@ -307,19 +316,19 @@ main {
 }
 .Courses_inner .Courses_card {
   position: relative;
-  width: 30rem;
-  height: 40rem;
+  width: 35rem;
+  height: 60rem;
   margin-top: 1rem;
-  border-radius: 10px;
-  background: linear-gradient(black 55%, #EF790B);
-  color: #fff;
+  border-radius: 5px;
+  border: solid 10px #45268d;
+  color: #45268d;
   overflow: hidden;
   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 .Courses_inner .Courses_card-image {
   width: 100%;
   overflow: hidden;
-  height: 70%;
+  height: 60%;
   object-fit: cover;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.3);
 }
@@ -328,28 +337,71 @@ main {
   width: 100%;
   text-align: center;
 }
+.Courses_inner .Courses_card-body {
+  margin: 3rem auto 0 auto;
+  text-align: center;
+  width: 90%;
+  font-size: 1.5rem;
+  color: black;
+}
 .Courses_inner .Courses_card-link {
   text-decoration: none;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   background-color: #45268d;
   color: #fff;
-  border-radius: 0.5rem;
   font-size: 2rem;
-  width: 50%;
+  width: 100%;
   position: absolute;
-  bottom: 3%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
   transition: all 0.3s ease-in-out;
 }
 .Courses_inner .Courses_card-link:hover {
   cursor: pointer;
-  padding: 1.5rem 2.5rem;
-  color: #fff;
+  padding: 2rem 0;
+  background: #EF790B;
 }
 .Courses_inner .Courses_card-link-disabled {
   pointer-events: none;
+  background: #585858;
+}
+
+.Syllabus {
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+}
+.Syllabus_title {
+  font-size: 5rem;
+  color: #45268d;
+  font-weight: bold;
+}
+.Syllabus_title:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5rem;
+  background: #45268d;
+}
+.Syllabus_list {
+  font-size: 2rem;
+}
+.Syllabus_list-section {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #45268d;
+  margin-top: 3rem;
+}
+.Syllabus_list-item {
+  line-height: 3;
+}
+.Syllabus_list-item:before {
+  display: inline-block;
+  content: "";
+  font-family: "FontAwesome";
+  margin-right: 1rem;
+  color: #EF790B;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.Syllabus {
+  @include center;
+
+  &_title {
+    font-size: $title-size;
+    color: $primary-colour;
+    font-weight: bold;
+    @include underline;
+  }
+
+  &_list {
+    font-size: $body-size;
+
+    &-section {
+      font-size: $subtitle-size;
+      font-weight: bold;
+      color: $primary-colour;
+      margin-top: 3rem;
+    }
+
+    &-item {
+      line-height: 3;
+      @include bulletPoint;
+    }
+  }
+}
