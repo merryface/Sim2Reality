@@ -181,7 +181,6 @@ main {
 
 .ProductHero {
   position: relative;
-  background-image: url(/assets/pplHero2.jpg);
   background-size: cover;
   height: 88vh;
   overflow: hidden;
@@ -218,6 +217,9 @@ main {
   left: 0;
   top: 15%;
   transform: translateY(-50%);
+}
+.ProductHero-ppl {
+  background-image: url("/assets/pplHero2.jpg");
 }
 
 .Introduction {
