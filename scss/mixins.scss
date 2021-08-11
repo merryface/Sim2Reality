@@ -1,4 +1,6 @@
+// ==================
 // Slide from left offscreen into view
+// ==================
 @mixin slideIn($name, $duration, $to: 0) {
   animation: #{$duration}s ease-out 0s 1 #{$name};
 
@@ -13,8 +15,29 @@
   }
 }
 
+
+// ==================
+// Center element
+// ==================
 @mixin center {
+  width: 70%;
   max-width: 1100px;
-  width: 80%;
   margin: auto;
+}
+
+
+// ==================
+// Flight Movement
+// ==================
+@mixin jostle {
+  animation: ease-in-out 7.5s jostle alternate infinite;
+
+  @keyframes jostle {
+    0% {
+      transform: scale(0.98) rotate(1deg);
+    }
+    100% {
+      transform: scale(1.02) rotate(-1deg);
+    }
+  }
 }

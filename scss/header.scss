@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 2rem;
+  padding: 0 10rem;
 
   &_logo {
     max-height: calc(#{$header-height} - 1rem);
@@ -20,7 +20,7 @@
     display: flex;
     
     &-item {
-      padding: 0 1rem;
+      padding: 0 2rem;
       transition: color ease-in-out 0.2s;
 
       &:hover {

@@ -70,7 +70,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 10rem;
 }
 .Header_logo {
   max-height: calc(6rem - 1rem);
@@ -80,7 +80,7 @@ main {
   display: flex;
 }
 .Header_nav-item {
-  padding: 0 1rem;
+  padding: 0 2rem;
   transition: color ease-in-out 0.2s;
 }
 .Header_nav-item:hover {
@@ -179,9 +179,50 @@ main {
   }
 }
 
+.ProductHero {
+  position: relative;
+  background-image: url(/assets/pplHero2.jpg);
+  background-size: cover;
+  height: 88vh;
+  overflow: hidden;
+  border-bottom: 5vh #EF790B solid;
+  box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5rem;
+}
+.ProductHero_cockpit {
+  position: absolute;
+  width: 90vw;
+  max-width: 100rem;
+  bottom: -1.3rem;
+  right: -1rem;
+  animation: ease-in-out 7.5s jostle alternate infinite;
+  z-index: 10;
+}
+@keyframes jostle {
+  0% {
+    transform: scale(0.98) rotate(1deg);
+  }
+  100% {
+    transform: scale(1.02) rotate(-1deg);
+  }
+}
+.ProductHero_title {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  background: #45268d;
+  padding-left: 4rem;
+  padding-right: 3rem;
+  border-radius: 0px 100px 20px 0px;
+  left: 0;
+  top: 15%;
+  transform: translateY(-50%);
+}
+
 .Introduction {
+  width: 70%;
   max-width: 1100px;
-  width: 80%;
   margin: auto;
 }
 .Introduction_header {
@@ -212,8 +253,8 @@ main {
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.7);
 }
 .Widgets_inner {
+  width: 70%;
   max-width: 1100px;
-  width: 80%;
   margin: auto;
 }
 .Widgets_inner-title {
@@ -242,8 +283,8 @@ main {
 }
 
 .Courses {
+  width: 70%;
   max-width: 1100px;
-  width: 80%;
   margin: auto;
 }
 .Courses_title {
@@ -294,11 +335,10 @@ main {
   bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .Courses_inner .Courses_card-link:hover {
   cursor: pointer;
-  background-color: rgba(239, 121, 11, 0.5);
   padding: 1.5rem 2.5rem;
   color: #fff;
 }
