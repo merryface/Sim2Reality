@@ -182,7 +182,7 @@ main {
 .ProductHero {
   position: relative;
   background-size: cover;
-  height: 88vh;
+  height: 90vh;
   overflow: hidden;
   border-bottom: 5vh #EF790B solid;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.7);
@@ -193,7 +193,7 @@ main {
   width: 90vw;
   max-width: 100rem;
   bottom: -1.3rem;
-  right: -1rem;
+  right: -1.3rem;
   animation: ease-in-out 7.5s jostle alternate infinite;
   z-index: 10;
 }
@@ -265,7 +265,7 @@ main {
 .Widgets_inner_items {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   flex-flow: wrap;
 }
@@ -282,6 +282,10 @@ main {
   font-family: "FontAwesome";
   font-size: 5rem;
   margin: auto;
+}
+.Widgets_inner_items-itemText {
+  max-width: 16rem;
+  text-align: center;
 }
 
 .Courses {

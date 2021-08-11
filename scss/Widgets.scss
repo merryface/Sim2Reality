@@ -17,7 +17,7 @@
     &_items {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
       flex-flow: wrap;
 
@@ -35,6 +35,11 @@
           font-size: 5rem;
           margin: auto;
         }
+      }
+
+      &-itemText {
+        max-width: 16rem;
+        text-align: center;
       }
     }
   }
