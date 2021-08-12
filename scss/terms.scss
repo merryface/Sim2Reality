@@ -1,6 +1,6 @@
 .terms {
   @include center;
-  height: 58vh;
+  min-height: 57.7vh;
 
   &_title {
     font-size: $title-size;
