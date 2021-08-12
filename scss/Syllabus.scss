@@ -1,22 +1,25 @@
 .Syllabus {
   @include center;
+  margin-bottom: 5rem;
 
   &_title {
     font-size: $title-size;
     color: $primary-colour;
     font-weight: bold;
     @include underline;
+    margin-bottom: 5rem;
+  }
+
+  &_list-section {
+    font-size: $subtitle-size;
+    font-weight: bold;
+    color: $primary-colour;
+    margin-top: 3rem;
   }
 
   &_list {
     font-size: $body-size;
 
-    &-section {
-      font-size: $subtitle-size;
-      font-weight: bold;
-      color: $primary-colour;
-      margin-top: 3rem;
-    }
 
     &-item {
       line-height: 3;

@@ -4,6 +4,7 @@
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  overscroll-behavior: none;
 
   h1, h2, h3, h4 {
     font-family: Inconsolata;
@@ -28,4 +29,5 @@ main {
 @import 'widgets.scss';
 @import 'Courses.scss';
 @import 'Syllabus.scss';
+@import 'CTA.scss';
 
