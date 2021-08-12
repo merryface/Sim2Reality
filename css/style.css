@@ -60,7 +60,7 @@ table {
 }
 
 main {
-  margin-bottom: 10rem;
+  position: relative;
   line-height: 1.5;
 }
 
@@ -89,6 +89,46 @@ main {
 .Header_nav-item:hover {
   cursor: pointer;
   color: #EF790B;
+}
+
+.Footer {
+  background: #45268d;
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem 10rem;
+  margin-top: 10rem;
+}
+.Footer_siteLinks_inner-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.Footer_partners {
+  height: 100%;
+}
+.Footer_partners_inner {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Footer_partners_inner-text {
+  flex: 0 0 100%;
+  margin-bottom: 2rem;
+}
+.Footer_partners_inner .logo-link {
+  height: 5rem;
+}
+.Footer_partners_inner-udemy .logo-link {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-sizing: content-box;
 }
 
 .Hero {

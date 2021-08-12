@@ -13,7 +13,8 @@
 }
 
 main {
-  margin-bottom: 10rem;
+  position: relative;
+  // margin-bottom: 10rem;
   line-height: 1.5;
 }
 
@@ -24,6 +25,7 @@ main {
 
 // Main files
 @import 'header.scss';
+@import 'footer.scss';
 @import 'hero.scss';
 @import 'ProductHero.scss';
 @import 'introduction.scss';

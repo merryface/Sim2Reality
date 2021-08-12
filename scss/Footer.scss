@@ -1,0 +1,56 @@
+.Footer {
+  background: $primary-colour;
+  font-size: $header-nav;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem 10rem;
+  margin-top: 10rem;
+  
+  // ================ 
+  // LINKS
+  &_siteLinks {
+    &_inner {
+      &-item a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+  
+  
+  
+  // ================ 
+  // PARTNERS
+  &_partners {
+    height: 100%;
+    &_inner {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      
+      &-text {
+        flex: 0 0 100%;
+        margin-bottom: 2rem;
+      }
+      
+      .logo-link {
+        height: 5rem;
+      }
+      
+      &-udemy {
+        .logo-link {
+          background: $white;
+          padding: 1rem 2rem;
+          border-radius: 1rem;
+          box-sizing:content-box;
+        }
+      }
+    }
+  }
+}
