@@ -14,8 +14,14 @@
 
 main {
   position: relative;
-  // margin-bottom: 10rem;
   line-height: 1.5;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
 }
 
 @import 'variables.scss';

@@ -1,5 +1,6 @@
 .terms {
   @include center;
+  height: 58vh;
 
   &_title {
     font-size: $title-size;
