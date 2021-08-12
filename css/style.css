@@ -527,4 +527,50 @@ body {
   text-decoration: none;
 }
 
+.Faq {
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+}
+.Faq_questions {
+  min-height: 100vh;
+}
+.Faq_questions_accordion {
+  margin-bottom: 5rem;
+  position: relative;
+  padding: 1rem;
+  border: #EF790B 0.3rem solid;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+.Faq_questions_accordion:hover {
+  cursor: pointer;
+  border: #45268d 0.3rem solid;
+}
+.Faq_questions_accordion-question {
+  font-size: 3rem;
+  font-family: Inconsolata;
+}
+.Faq_questions_accordion i {
+  position: absolute;
+  color: #EF790B;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+.Faq_questions_accordion-answer {
+  font-size: 2rem;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.2s ease-in-out;
+  overflow-y: auto;
+}
+.Faq .show .Faq_questions_accordion-answer {
+  max-height: 50rem;
+}
+.Faq .show i {
+  transform: rotate(180deg);
+}
+
 /*# sourceMappingURL=style.css.map */

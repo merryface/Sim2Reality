@@ -1,0 +1,52 @@
+.Faq {
+  @include center;
+
+  &_questions {
+    min-height: 100vh;
+    &_accordion {
+      margin-bottom: 5rem;
+      position: relative;
+      padding: 1rem;
+      border: $secondary-colour 0.3rem solid;
+      transition: all 0.3s ease-in-out;
+      border-radius: 0.5rem;
+
+      &:hover {
+        cursor: pointer;
+        border: $primary-colour 0.3rem solid;
+      }
+
+      &-question {
+        font-size: $subtitle-size;
+        font-family: Inconsolata;
+      }
+
+      i {
+        position: absolute;
+        color: $secondary-colour;
+        right: 2rem;
+        top: 1.5rem;
+        font-size: $subtitle-size;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &-answer {
+        font-size: $body-size;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 0.2s ease-in-out;
+        overflow-y: auto;
+      }
+    }
+  }
+
+  .show {
+    .Faq_questions_accordion-answer {
+      max-height: 50rem;
+    }
+
+    i {
+        transform: rotate(180deg);
+    }
+  }
+}
