@@ -25,6 +25,10 @@
     li {
       @include bulletPoint;
       line-height: 2.5;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

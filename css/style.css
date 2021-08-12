@@ -515,5 +515,8 @@ body {
   margin-right: 1rem;
   color: #EF790B;
 }
+.terms_list li a {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
