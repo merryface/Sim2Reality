@@ -112,6 +112,10 @@ body {
 .Footer_siteLinks_inner-item a {
   text-decoration: none;
   color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+.Footer_siteLinks_inner-item a:hover {
+  color: #EF790B;
 }
 .Footer_partners {
   height: 100%;
@@ -126,10 +130,14 @@ body {
 }
 .Footer_partners_inner-text {
   flex: 0 0 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .Footer_partners_inner .logo-link {
   height: 5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+.Footer_partners_inner .logo-link:hover {
+  opacity: 0.65;
 }
 .Footer_partners_inner-udemy .logo-link {
   background: #fff;

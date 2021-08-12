@@ -16,6 +16,11 @@
       &-item a {
         text-decoration: none;
         color: $white;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $secondary-colour;
+        }
       }
     }
   }
@@ -36,11 +41,16 @@
       
       &-text {
         flex: 0 0 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
       
       .logo-link {
         height: 5rem;
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+          opacity: 0.65;
+        }
       }
       
       &-udemy {
