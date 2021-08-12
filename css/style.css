@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 html {
   width: 100vw;
 }
@@ -433,6 +434,38 @@ main {
   bottom: 50%;
   transform: translateY(50%);
   transition: all 0.3s ease-in-out;
+}
+
+.terms {
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+}
+.terms_title {
+  font-size: 5rem;
+  color: #45268d;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.terms_subtitle {
+  font-size: 3rem;
+  color: #45268d;
+  margin-bottom: 2rem;
+}
+.terms_body, .terms_list {
+  font-size: 2rem;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+.terms_list li {
+  line-height: 2.5;
+}
+.terms_list li:before {
+  display: inline-block;
+  content: "";
+  font-family: "FontAwesome";
+  margin-right: 1rem;
+  color: #EF790B;
 }
 
 /*# sourceMappingURL=style.css.map */

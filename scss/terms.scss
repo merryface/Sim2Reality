@@ -1,0 +1,29 @@
+.terms {
+  @include center;
+
+  &_title {
+    font-size: $title-size;
+    color: $primary-colour;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  &_subtitle {
+    font-size: $subtitle-size;
+    color: $primary-colour;
+    margin-bottom: 2rem;
+  }
+
+  &_body, &_list {
+    font-size: $body-size;
+    line-height: 2;
+    margin-bottom: 5rem;
+  }
+
+  &_list {
+    li {
+      @include bulletPoint;
+      line-height: 2.5;
+    }
+  }
+}

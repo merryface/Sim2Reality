@@ -1,5 +1,6 @@
 // Set up
 @import 'reset.scss';
+@import 'typography.scss';
 :root {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
@@ -30,4 +31,7 @@ main {
 @import 'Courses.scss';
 @import 'Syllabus.scss';
 @import 'CTA.scss';
+
+
+@import 'terms.scss';
 
