@@ -6,6 +6,13 @@
     font-size: $title-size;
     font-weight: bold;
     color: $primary-colour;
+
+    @include below($large-phone) {
+      font-size: calc(#{$title-size} - 1rem);
+      width: 100%;
+      text-align: center;
+      line-height: 1;
+    }
   }
 
   &_subtitle {
@@ -15,6 +22,13 @@
 
     span {
       font-weight: bold;
+    }
+
+    @include below($large-phone) {
+      font-size: calc(#{$subtitle-size} - 0.5rem);
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5rem;
     }
   }
 
