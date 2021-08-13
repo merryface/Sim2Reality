@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/fe91e7cc39.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/fe91e7cc39.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="Header">
@@ -17,30 +17,30 @@
     </a>
 
     <nav class="Header_nav">
-      <div class="Header_nav-item">Home</div>
-      <div class="Header_nav-item">About</div>
-      <div class="Header_nav-item">Courses</div>
+      <a class="Header_nav-item" href="/">Home</a>
+      <a class="Header_nav-item courses" href="#Introduction">About</a>
+      <a class="Header_nav-item" href="./courses.html">Courses</a>
     </nav>
   </header>
-  <section class="Hero">
+  <div class="Hero">
     <div class="Hero_bg"></div>
-    <img src="./assets/c172_behind.png" class="Hero_cessna" aria-hidden="true" alt="Cessna 172 from behind"></img>
+    <img src="./assets/c172_behind.png" class="Hero_cessna" aria-hidden="true" alt="Cessna 172 from behind" />
     <div class="Hero_clouds" aria-hidden="true">
-      <img src="/assets/cloud1.png" class="Hero_clouds-cloud" style="--i:1;">
-      <img src="/assets/cloud2.png" class="Hero_clouds-cloud" style="--i:2;">
-      <img src="/assets/cloud3.png" class="Hero_clouds-cloud" style="--i:3;">
-      <img src="/assets/cloud4.png" class="Hero_clouds-cloud" style="--i:4;">
-      <img src="/assets/cloud5.png" class="Hero_clouds-cloud" style="--i:5;">
-      <img src="/assets/cloud1.png" class="Hero_clouds-cloud" style="--i:10;">
-      <img src="/assets/cloud2.png" class="Hero_clouds-cloud" style="--i:9;">
-      <img src="/assets/cloud3.png" class="Hero_clouds-cloud" style="--i:8;">
-      <img src="/assets/cloud4.png" class="Hero_clouds-cloud" style="--i:7;">
-      <img src="/assets/cloud5.png" class="Hero_clouds-cloud" style="--i:6;">
+      <img src="/assets/cloud1.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:1;">
+      <img src="/assets/cloud2.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:2;">
+      <img src="/assets/cloud3.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:3;">
+      <img src="/assets/cloud4.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:4;">
+      <img src="/assets/cloud5.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:5;">
+      <img src="/assets/cloud1.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:10;">
+      <img src="/assets/cloud2.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:9;">
+      <img src="/assets/cloud3.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:8;">
+      <img src="/assets/cloud4.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:7;">
+      <img src="/assets/cloud5.png" alt="animated cloud" class="Hero_clouds-cloud" style="--i:6;">
     </div>
     <img src="/assets/logo/main_logo.png" class="Hero_logo" alt="Sim2Reality main logo transparent" />
-  </section>
+  </div>
   <main>
-    <div class="Introduction">
+    <div class="Introduction" id="Introduction">
       <h1 class="Introduction_header">Welcome to Sim2Reality</h1>
       <p class="Introduction_subtitle">Learn from a <span>real</span> Flight Instructor</p>
       <p class="Introduction_body">
@@ -105,9 +105,9 @@
       <div class="Footer_partners">
         <div class="Footer_partners_inner">
           <p class="Footer_partners_inner-text">Related Links:</p>
-          <a class="Footer_partners_inner-merryface" href="/faq.html"><img src="./assets/merryface-aviation-logo.png" class="logo-link" /></a>
-          <a class="Footer_partners_inner-s2r" href=""><img src="./assets/yt-logo.png" class="logo-link" /></a>
-          <a class="Footer_partners_inner-udemy" href="/"><img src="./assets/logo-udemy.png" class="logo-link" /></a>
+          <a class="Footer_partners_inner-merryface" href="https://www.youtube.com/user/MerryfaceAviation"><img src="./assets/merryface-aviation-logo.png" class="logo-link" alt="Link to Merryface Aviation Youtube Channel" width="91" height="50" /></a>
+          <a class="Footer_partners_inner-s2r" href="https://www.youtube.com/channel/UC20iOwLsxh-npMtzmWpvlBA"><img src="./assets/yt-logo.png" class="logo-link" alt="Link to Sim2Reality Youtube Channel" width="50" height="50" /></a>
+          <a class="Footer_partners_inner-udemy" href="https://www.udemy.com/user/tarik-merrylees/"><img src="./assets/logo-udemy.png" class="logo-link" alt="Link to Udemy Sim2Reality profile" width="120" height="50" /></a>
         </div>
       </div>
     </footer>
