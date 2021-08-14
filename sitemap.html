@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitemap for the Sim2Reality website.">
   <title>Sitemap</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/fe91e7cc39.js" crossorigin="anonymous"></script>
@@ -12,6 +13,7 @@
   <main>
 
     <header class="Header">
+      <script defer src='/mobile-menu.js'></script>
       <div class="div Header_inner">
 
         <a href="/">
@@ -21,7 +23,21 @@
         <nav class="Header_inner_nav">
           <a class="Header_inner_nav-item" href="/">Home</a>
           <a class="Header_inner_nav-item courses" href="#Introduction">About</a>
-          <a class="Header_inner_nav-item" href="./courses.html">Courses</a>
+          <a class="Header_inner_nav-item" href="./faq.html">FAQ</a>
+        </nav>
+
+        <div class="Header_inner_burger" id="burger">
+          <div class="Header_inner_burger-top line"></div>
+          <div class="Header_inner_burger-middle line"></div>
+          <div class="Header_inner_burger-bottom line"></div>
+        </div>
+
+        <nav class="Header_inner_nav-mobile" id="mobileNav">
+          <img src="/assets/logo/main_logo-white.png" class="Header_inner_nav-mobile_logo" alt="Sim2Reality Logo white" height="60" width="60" />
+          <a class="Header_inner_nav-mobile-item" href="/">Home</a>
+          <a class="Header_inner_nav-mobile-item courses" href="#Introduction">About</a>
+          <a class="Header_inner_nav-mobile-item" href="./faq.html">FAQ</a>
+          <button id="closeButton"><i class="fas fa-times"></i> Close</button>
         </nav>
       </div>
     </header>
