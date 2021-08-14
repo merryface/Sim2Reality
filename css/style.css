@@ -69,9 +69,9 @@ main {
 }
 
 .Header {
-  height: 6rem;
   background: #45268d;
   font-size: 1.5rem;
+  padding: 2rem 0;
 }
 .Header_inner {
   width: 70%;
@@ -93,8 +93,8 @@ main {
   }
 }
 .Header_inner_logo {
-  max-height: calc(6rem - 1rem);
-  max-width: calc(6rem - 1rem);
+  max-height: 5rem;
+  max-width: 5rem;
 }
 .Header_inner_nav {
   display: flex;

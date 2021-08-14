@@ -1,7 +1,7 @@
 .Header {
-  height: $header-height;
   background: $primary-colour;
   font-size: $header-nav;
+  padding: 2rem 0;
 
   &_inner {
     @include center;
@@ -11,8 +11,8 @@
     justify-content: space-between;
     
     &_logo {
-      max-height: calc(#{$header-height} - 1rem);
-      max-width: calc(#{$header-height} - 1rem);
+      max-height: 5rem;
+      max-width: 5rem;
     }
     
     &_nav {
