@@ -5,6 +5,10 @@
   position: relative;
   width: 100%;
   height: 100vh;
+
+  @include below(600px) {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4); 
+  }
   
   &_bg {
     background-image: linear-gradient(rgba(12, 53, 187, 0.8), rgba(46, 170, 219, 0.6));
@@ -24,6 +28,17 @@
     @include slideIn(left, 3);
     animation-fill-mode: forwards;
     z-index: 2;
+
+    @include below($large-phone) {
+      width: 80vw;
+      top: 30%;
+    }
+
+    @include below($phone) {
+      animation: none;
+      width: 100%;
+      transform: rotate(-30deg);
+    }
   }
 
   &_clouds {
@@ -40,7 +55,18 @@
       position: absolute;
       bottom: -1rem;
       max-width: 100%;
-      animation: animate calc(3s * var(--i)) linear infinite; 
+      min-width: 100%;
+      max-height: 40%;
+      animation: animate calc(3s * var(--i)) linear infinite;
+
+      @include below($large-phone) {
+        min-height: 30%;
+      }
+
+      @include below(600px) {
+        display: none;
+        animation: none;
+      }
     }
 
     @keyframes animate {
@@ -68,7 +94,7 @@
     transform: translate(-50%, 50%);
 
 
-    animation: appear ease 2.2s;
+    animation: appear ease 2.1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-delay: 2.3s;
@@ -78,20 +104,26 @@
       0% {
         opacity: 0;
         width: 48%;
+        @include below($tablet)  {width: 58%};
       }
 
       100% {
         opacity: 1;
         width: 50%;
+        @include below($tablet)  {width: 61%};
       }
+    }
+
+    @include below($large-phone) {
+      opacity: 1;
+      animation: none;
+      width: 80%;
+    }
+
+    @include below($phone) {
+      bottom:30%;
+      top: unset;
+      width: 90%;
     }
   }
 }
-
-// @media screen and (max-width: 900px) {
-//   .Hero {
-//     &_bg {
-//       background: none;
-//     }
-//   }
-// }

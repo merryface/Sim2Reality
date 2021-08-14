@@ -10,8 +10,6 @@
     align-items: center;
     justify-content: space-between;
     
-    // padding: 0 10rem;
-    
     &_logo {
       max-height: calc(#{$header-height} - 1rem);
       max-width: calc(#{$header-height} - 1rem);

@@ -35,5 +35,10 @@
   &_body {
     margin: 1rem 0;
     font-size: $body-size;
+
+    @include below($large-phone) {
+      width: 100%;
+      text-align: center
+    }
   }
 }
