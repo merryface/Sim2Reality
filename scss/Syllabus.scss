@@ -8,6 +8,14 @@
     font-weight: bold;
     @include underline;
     margin-bottom: 5rem;
+
+    @include below($desktop) {
+      font-size: calc(#{$title-size} - 1.2rem);
+    }
+
+    @include below($large-phone) {
+      font-size: calc(#{$title-size} - 2rem);
+    }
   }
 
   &_list-section {
@@ -15,15 +23,34 @@
     font-weight: bold;
     color: $primary-colour;
     margin-top: 3rem;
+
+    @include below($tablet) {
+      font-size: calc(#{$subtitle-size} - 0.5rem);
+    }
+
+    @include below($large-phone) {
+      font-size: calc(#{$subtitle-size} - 1rem);
+    }
+
+    @include below($phone) {
+      font-size: calc(#{$subtitle-size} - 1.2rem);
+    }
   }
 
   &_list {
     font-size: $body-size;
 
-
     &-item {
       line-height: 3;
       @include bulletPoint;
+
+      @include below($tablet) {
+        font-size: calc(#{$body-size} - 0.5rem);
+      }
+
+      @include below($phone) {
+        font-size: calc(#{$body-size} - 0.6rem);
+      }
     }
   }
 }
