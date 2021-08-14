@@ -16,6 +16,10 @@
     @include below($large-phone) {
       flex-direction: column-reverse;
     }
+
+    @include below(600px) {
+      align-items: center;
+    }
     
     // ================ 
     // LINKS
@@ -41,7 +45,18 @@
         }
 
         @include below(600px) {
-          flex-direction: column;
+          flex-wrap: wrap;
+          width: 70%;
+          align-items: center;
+          justify-content: space-around;
+
+          &:before {
+            content: '';
+            width: 95vw;
+            height: 0.2rem;
+            background: $secondary-colour;
+            margin-bottom: 2rem;
+          }
         }
         
         &-item {
