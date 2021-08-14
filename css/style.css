@@ -517,11 +517,11 @@ main {
   }
 }
 .ProductHero-ppl {
-  background-image: url("./assets/pplHero.jpg");
+  background-image: url("../assets/pplHero.jpg");
 }
 @media screen and (max-width: 720px) {
   .ProductHero-ppl {
-    background-image: url("./assets/pplHero-small.jpg");
+    background-image: url("../assets/pplHero-small.jpg");
     background-attachment: unset;
     background-position: center;
     background-size: cover;
